@@ -41,15 +41,27 @@ public:
 
 class search {
 private:
+	// Declare private variables here:
+
+	// Declare private prototypes here:
 
 public:
+	// Declare public variables here:
+
+	// Declare public prototypes here:
 
 };
 
 class sort {
 private:
+	// Declare private variables here:
+
+	// Declare private prototypes here:
 
 public:
+	// Declare public variables here:
+
+	// Declare public prototypes here:
 
 };
 
