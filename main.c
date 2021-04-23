@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 	int test_number = 10;
 	ptr = &test_number;
 	func.number(ptr);
-	func.linked_list a;
+	//func.linked_list a;
 	const char* my_msg = "hello world";
 	func.message(&my_msg);
 	//printf("%d \n", test_number);

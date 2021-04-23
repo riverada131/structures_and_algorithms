@@ -17,6 +17,11 @@ struct person{
 	struct Node *prev;
 };
 
+struct single_node {
+	std::string name;
+	struct Node *next;
+};
+
 class list {
 private:
 	//Declare private variables here:
