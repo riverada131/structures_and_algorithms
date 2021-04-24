@@ -26,6 +26,7 @@ class list {
 private:
 	//Declare private variables here:
 	person *head, *tail;
+	single_node *head, *tail;
 	//Declare private prototypes here:
 
 public:
