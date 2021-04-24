@@ -21,7 +21,9 @@ void list::linked_list(){
 	tail = NULL;
 }
 
-void list::number(int* num) {
-	printf("The number is %d \n", *num);
-
+void list::printList(single_node *n){
+	while (n != NULL) {
+		cout << n->data << endl;
+		n = n->next;
+	}
 }

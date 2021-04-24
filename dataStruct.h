@@ -9,24 +9,16 @@ Copyright 2021, Daniel Rivera, All rights reserved
 
 #include <string>
 
-struct person{
-	std::string firstName;
-	std::string lastName;
-	std::string phoneNumber;
-	struct Node *next;
-	struct Node *prev;
-};
-
 struct single_node {
-	std::string name;
-	struct Node *next;
+	int data;
+	struct single_node *next;
 };
 
 class list {
 private:
 	//Declare private variables here:
-	person *head, *tail;
 	single_node *head, *tail;
+
 	//Declare private prototypes here:
 
 public:
@@ -36,6 +28,7 @@ public:
 	void message(const char **msg);
 	void number(int* num);
 	void createNode();
+	void printList(single_node *n);
 
 	void linked_list();
 };

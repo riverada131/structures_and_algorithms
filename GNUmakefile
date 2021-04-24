@@ -9,13 +9,17 @@ CFLAGS=-I
 
 # use the @ prepend to hide compile message (Source: https://stackoverflow.com/questions/9883950/how-to-hide-compiling-message-in-makefile)
 # set recipes for compiling the files
-test : main.c dataStruct.o
+test : main.c dataStruct.o menu.o
 	@$(CC) -g main.c -o test.exe
 	@echo 'Action complete. Use ./test.exe to run'
 
 dataStruct.o : dataStruct.c dataStruct.h
 	@$(CC) -g -c dataStruct.c -o dataStruct.o
 	@echo 'Action complete. dataStruct.o has been created.'
+
+menu.o : menu.c menu.h
+	@$(CC) -g -c menu.c -o menu.o
+	@echo 'Action complete. menu.o has been created.'
 
 # set recipe for cleaning file structure
 

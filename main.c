@@ -8,30 +8,37 @@ Description:
 */
 
 #include "dataStruct.c"
+#include "menu.c"
 
 int main(int argc, char* argv[]) {
+	splash sh;
+	const char* name;
+	name = "Daniel Rivera";
+	sh.print_welcome(name);
+
 	list func;
-	int *ptr;
-	int test_number = 10;
-	ptr = &test_number;
-	func.number(ptr);
-	//func.linked_list a;
-	const char* my_msg = "hello world";
-	func.message(&my_msg);
-	//printf("%d \n", test_number);
-	//printf("%p \n", &test_number);
-	//printf("%p \n", ptr);
 
-	printf("&my_msg = %p \n", &my_msg);
-	printf("my_msg = %s \n", my_msg);
-	printf("*my_msg = %d \n", *my_msg);
-	//printf("**my_msg = %p \n", **my_msg); 
+	single_node *head = NULL;
+	single_node *second = NULL;
+	single_node *third = NULL;
+
+	head = new single_node();
+	second = new single_node();
+	third = new single_node();
 	
-	delete my_msg;
-	my_msg = NULL;
+	head->data = 1;
+	head->next = second;
 
-	delete ptr;
-	ptr = NULL;
+	second->data = 2;
+	second->next = third;
+
+	third->data = 3;
+	third->next = NULL;
+
+	//cout << second->data << endl;
+	//cout << second->next << endl;
+
+	func.printList(head);
 	return 0;
 }
 
