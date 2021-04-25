@@ -14,7 +14,7 @@ Description:
 using std::string;
 
 int main(int argc, char* argv[]) {
-
+	int creation_year = 2021;
 	string name = "Daniel Rivera";
 	string creation_date = "4/25/2021";
 	string name_of_program = "structures and algorithms";
@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 	string *full_name = &name;
 	string *origination_date = &creation_date;
 	string *program_name = &name_of_program;
-	sh.print_welcome(full_name, origination_date, program_name);
+	sh.print_welcome(creation_year, full_name, origination_date, program_name);
 
 	full_name = NULL;
 	delete full_name;
