@@ -16,7 +16,7 @@ class splash {
 private:
 
 public:
-	void print_welcome(string *msg);
+	void print_welcome(string *msg, string *origination_date, string *program_name);
 };
 
 class menu {

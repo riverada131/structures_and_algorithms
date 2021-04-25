@@ -14,10 +14,16 @@ Description:
 using std::string;
 
 int main(int argc, char* argv[]) {
-	splash sh;
+
 	string name = "Daniel Rivera";
+	string creation_date = "4/25/2021";
+	string name_of_program = "structures and algorithms";
+
+	splash sh;
 	string *full_name = &name;
-	sh.print_welcome(full_name);
+	string *origination_date = &creation_date;
+	string *program_name = &name_of_program;
+	sh.print_welcome(full_name, origination_date, program_name);
 
 	full_name = NULL;
 	delete full_name;
