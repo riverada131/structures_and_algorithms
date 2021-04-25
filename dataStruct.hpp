@@ -4,8 +4,8 @@ Created on: 4/3/2021
 Copyright 2021, Daniel Rivera, All rights reserved 
 */
 
-#ifndef DATASTRUCT_H
-#define DATASTRUCT_H
+#ifndef DATASTRUCT_HPP
+#define DATASTRUCT_HPP
 
 #include <string>
 
@@ -59,4 +59,4 @@ public:
 
 };
 
-#endif /* DATASTRUCT_H */
+#endif /* DATASTRUCT_HPP */

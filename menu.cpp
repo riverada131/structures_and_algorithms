@@ -7,14 +7,17 @@ Description:
 
 */
 
-#include "menu.h"
+#include "menu.hpp"
 #include <iostream>
+#include <string>
 
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
 
-void splash::print_welcome(char *msg) {
-	printf("Hello my name is %p", msg);
+void splash::print_welcome(string *msg) {
+	cout << "Hello, my name is " << *msg << endl; 
+	//printf("Hello my name is %p", msg);
 };
 

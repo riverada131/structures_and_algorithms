@@ -7,25 +7,27 @@ Description:
 
 */
 
-#include "dataStruct.c"
-#include "menu.c"
+#include "dataStruct.cpp"
+#include <string>
+#include "menu.cpp"
+
+using std::string;
 
 int main(int argc, char* argv[]) {
 	splash sh;
-	const char* name;
-	name = "Daniel Rivera";
-	sh.print_welcome(name);
+	string name = "Daniel Rivera";
+	string *full_name = &name;
+	sh.print_welcome(full_name);
+
+	full_name = NULL;
+	delete full_name;
 
 	list func;
 
-	single_node *head = NULL;
-	single_node *second = NULL;
-	single_node *third = NULL;
+	single_node *head = new single_node();
+	single_node *second = new single_node();
+	single_node *third = new single_node();;
 
-	head = new single_node();
-	second = new single_node();
-	third = new single_node();
-	
 	head->data = 1;
 	head->next = second;
 
@@ -35,10 +37,10 @@ int main(int argc, char* argv[]) {
 	third->data = 3;
 	third->next = NULL;
 
-	//cout << second->data << endl;
-	//cout << second->next << endl;
-
 	func.printList(head);
+	delete head;
+	delete second;
+	delete third;
 	return 0;
 }
 
