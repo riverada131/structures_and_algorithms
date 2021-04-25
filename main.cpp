@@ -14,21 +14,21 @@ Description:
 using std::string;
 
 int main(int argc, char* argv[]) {
-	int creation_year = 2021;
-	string name = "Daniel Rivera";
-	string creation_date = "4/25/2021";
-	string name_of_program = "structures and algorithms";
+	//variable declerations:
+	int creation_year = 2021; //variable to add year here for copyright addition
+	string name = "Daniel Rivera"; //variable to add the author's name here
+	string creation_date = "4/25/2021"; //variable created for date this program was created on.
+	string name_of_program = "structures and algorithms"; // variable for the program name.
 
-	splash sh;
+	//pointer declerations:
 	string *full_name = &name;
 	string *origination_date = &creation_date;
 	string *program_name = &name_of_program;
-	sh.print_welcome(creation_year, full_name, origination_date, program_name);
-
-	full_name = NULL;
-	delete full_name;
-
+	
+	//function declerations:
+	splash sh;
 	list func;
+	sh.print_welcome(creation_year, full_name, origination_date, program_name);
 
 	single_node *head = new single_node();
 	single_node *second = new single_node();
@@ -44,6 +44,10 @@ int main(int argc, char* argv[]) {
 	third->next = NULL;
 
 	func.printList(head);
+
+	//pointer cleanup:
+	full_name = NULL;
+	delete full_name;
 	delete head;
 	delete second;
 	delete third;
