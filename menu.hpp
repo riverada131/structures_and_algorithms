@@ -10,6 +10,14 @@ copyright 2021, Daniel Rivera, all rights reserved
 
 #include <string>
 
+typedef void(*menu_processing_function_pointer)(void);
+
+struct menu_options {
+	char choice;
+	const char *p_selection_text;
+	menu_processing_function_pointer p_processing_function;
+};
+
 using std::string;
 
 class splash {
@@ -23,7 +31,9 @@ class menu {
 private:
 
 public:
-
+	int primary_menu();
+	void process_selection_one();
+	void process_selection_two();
 };
 
 #endif /* MENU_HPP */
