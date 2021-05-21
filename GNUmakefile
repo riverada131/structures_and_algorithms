@@ -1,4 +1,6 @@
 # Author: Daniel Rivera
+# Project Name: structures_and_algorithms
+# File Name: GNUmakefile
 # Created on: 04/20/2021
 # Copyright 2021, Daniel Rivera, All rights reserved
 # Description: This makefile contains all recipes to compile the project in this folder.

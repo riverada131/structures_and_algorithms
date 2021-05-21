@@ -1,5 +1,7 @@
 /*
 Author: Daniel Rivera
+Project Name: structures_and_algorithms
+File Name: dataStruct.cpp
 Created on: 4/3/2021
 Copyright 2021, Daniel Rivera, All rights reserved.
 */
