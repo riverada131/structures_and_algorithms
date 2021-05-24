@@ -1,8 +1,8 @@
-Author: Daniel Rivera
-Date: 4/3/2021
-Copyright 2021, Daniel Rivera, All rights reserved
+### Author: Daniel Rivera
+### Date: 4/3/2021
+### Copyright 2021, Daniel Rivera, All rights reserved
 
-Title: Project dataStruct
+### Title: Project dataStruct
 
 Description: This project and its content is used to practice
 data structures and algorithms utilizing the C language. The
