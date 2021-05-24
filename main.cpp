@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
 	string *full_name = &name;
 	string *origination_date = &creation_date;
 	string *program_name = &name_of_program;
-	
+
 	//function declerations:
 	splash sh;
 	list func;
